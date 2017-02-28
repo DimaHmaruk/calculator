@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+    <link href="css\style.css" rel="stylesheet">
+    <script src = "js\scriptForCalculator.js"></script>
+</head>
+<body>
+    <div class="calculator">
+        <form class="calculatorForm">
+            <div class="calculatorRow">
+                <input class="calculatorDisplay" id="display" type="text" disabled />
+            </div>
+            <div class="calculatorRow">
+                <input type="button" value="c" class="calculatorButton" onclick="clearAll()"/>
+                <input type="button" value="<--" class="calculatorButton" onclick="deleteLast()"/>
+                <input type="button" value="^x" class="calculatorButton" onclick="acts(value)"/>
+                <input type="button" value="+" class="calculatorButton" onclick="acts(value)"/>
+            </div>
+            <div class="calculatorRow">
+                <input type="button" value="7" class="calculatorButton" onclick="add(value)"/>
+                <input type="button" value="8" class="calculatorButton" onclick="add(value)"/>
+                <input type="button" value="9" class="calculatorButton" onclick="add(value)"/>
+                <input type="button" value="-" class="calculatorButton" onclick="acts(value)"/>
+            </div>
+            <div class="calculatorRow">
+                <input type="button" value="4" class="calculatorButton" onclick="add(value)"/>
+                <input type="button" value="5" class="calculatorButton" onclick="add(value)"/>
+                <input type="button" value="6" class="calculatorButton" onclick="add(value)"/>
+                <input type="button" value="/" class="calculatorButton" onclick="acts(value)"/>
+            </div>
+            <div class="calculatorRow">
+                <input type="button" value="1" class="calculatorButton" onclick="add(value)"/>
+                <input type="button" value="2" class="calculatorButton" onclick="add(value)"/>
+                <input type="button" value="3" class="calculatorButton" onclick="add(value)"/>
+                <input type="button" value="*" class="calculatorButton" onclick="acts(value)"/>
+            </div>
+            <div class="calculatorRow">
+                <input type="button" value="0" class="calculatorButton" onclick="add(value)"/>
+                <input type="button" value="." class="calculatorButton" onclick="add(value)"/>
+                <input type="button" value=" = " class="calculatorButton calculatorPlus" onclick="rav()"/>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
