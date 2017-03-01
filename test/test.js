@@ -28,51 +28,46 @@ describe("Tests", function() {
     });
 
     it("Function 'rav' is ok with +", function() {
-        act = "+"
+        act = "+";
         var x = 1;
-        var y = display.value;
+        var y = 1;
         firstValue = x;
-        rav();
-        assert.equal(display.value, (+x + +y));
+        rav(y);
+        assert.equal(firstValue, (+x + +y));
     });
 
     it("Function 'rav' is ok with -", function() {
-        act = "-"
-        var x = 1;
-        var y = display.value;
+        act = "-";
+        var x = 3;
+        var y = 2;
         firstValue = x;
-        rav();
-        assert.equal(display.value, (+x - +y));
+        rav(y);
+        assert.equal(firstValue, (+x - +y));
     });
 
     it("Function 'rav' is ok with *", function() {
-        act = "*"
-        var x = 1;
-        var y = display.value;
+        act = "*";
+        var x = 2;
+        var y = 2;
         firstValue = x;
-        rav();
-        assert.equal(display.value, (+x * +y));
+        rav(y);
+        assert.equal(firstValue, (+x * +y));
     });
 
     it("Function 'rav' is ok with /", function() {
-        act = "/"
-        var x = 1;
-        var y = display.value;
+        act = "/";
+        var x = 4;
+        var y = 2;
         firstValue = x;
-        rav();
-        assert.equal(display.value, (+x / +y));
+        rav(y);
+        assert.equal(firstValue, (+x / +y));
     });
-
-
-
 
     it("Function 'clearAlls' is ok", function() {
         firstValue = 1;
-        secondValue = 2;
         act = "+";
         clearAlls();
-        assert.equal(firstValue, null);
-        assert.equal(secondValue, null);
+        assert.equal(firstValue, 0);
         assert.equal(act, null);
     });
 

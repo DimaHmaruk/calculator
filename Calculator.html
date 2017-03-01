@@ -5,43 +5,67 @@
     <title>Калькулятор</title>
     <link href="css\style.css" rel="stylesheet">
     <script src = "js\scriptForCalculator.js"></script>
+    <!--<script src = "js\scriptFor.js"></script>-->
+    <script src = "test\test.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.js"></script>
+    <script>
+        mocha.setup('bdd');
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/2.0.0/chai.js"></script>
+    <script>
+        var assert = chai.assert;
+    </script>
 </head>
 <body>
+
+<script src="test/test.js"></script>
+
+<div id="mocha"></div>
+
+<script>
+    mocha.run();
+</script>
+
+
+<div id = "qwerty">
     <div class="calculator">
         <form class="calculatorForm">
             <div class="calculatorRow">
-                <input class="calculatorDisplay" id="display" type="text" disabled />
+                <input class="calculatorDisplay" id="display" type="text" disabled value = "0"/>
             </div>
             <div class="calculatorRow">
-                <input type="button" value="c" class="calculatorButton" onclick="clearAll()"/>
-                <input type="button" value="<--" class="calculatorButton" onclick="deleteLast()"/>
-                <input type="button" value="^x" class="calculatorButton" onclick="acts(value)"/>
-                <input type="button" value="+" class="calculatorButton" onclick="acts(value)"/>
+                <input type="button" value="c" class="calculatorButton" onclick="clearAlls()"/>
+                <input type="button" value="<--" class="calculatorButton" onclick="deleteLast(display.value)"/>
+                <input type="button" value="^x" class="calculatorButton" onclick="acts(display.value, value)"/>
+                <input type="button" value="+" class="calculatorButton" onclick="acts(display.value, value)"/>
             </div>
             <div class="calculatorRow">
                 <input type="button" value="7" class="calculatorButton" onclick="add(value)"/>
                 <input type="button" value="8" class="calculatorButton" onclick="add(value)"/>
                 <input type="button" value="9" class="calculatorButton" onclick="add(value)"/>
-                <input type="button" value="-" class="calculatorButton" onclick="acts(value)"/>
+                <input type="button" value="-" class="calculatorButton" onclick="acts(display.value, value)"/>
             </div>
             <div class="calculatorRow">
                 <input type="button" value="4" class="calculatorButton" onclick="add(value)"/>
                 <input type="button" value="5" class="calculatorButton" onclick="add(value)"/>
                 <input type="button" value="6" class="calculatorButton" onclick="add(value)"/>
-                <input type="button" value="/" class="calculatorButton" onclick="acts(value)"/>
+                <input type="button" value="/" class="calculatorButton" onclick="acts(display.value, value)"/>
             </div>
             <div class="calculatorRow">
                 <input type="button" value="1" class="calculatorButton" onclick="add(value)"/>
                 <input type="button" value="2" class="calculatorButton" onclick="add(value)"/>
                 <input type="button" value="3" class="calculatorButton" onclick="add(value)"/>
-                <input type="button" value="*" class="calculatorButton" onclick="acts(value)"/>
+                <input type="button" value="*" class="calculatorButton" onclick="acts(display.value, value)"/>
             </div>
             <div class="calculatorRow">
                 <input type="button" value="0" class="calculatorButton" onclick="add(value)"/>
                 <input type="button" value="." class="calculatorButton" onclick="add(value)"/>
-                <input type="button" value=" = " class="calculatorButton calculatorPlus" onclick="rav()"/>
+                <input type="button" value=" = " class="calculatorButton calculatorPlus" onclick="rav(display.value)"/>
             </div>
         </form>
     </div>
+</div>
 </body>
 </html>
