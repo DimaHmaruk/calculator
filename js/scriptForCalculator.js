@@ -4,7 +4,7 @@
 var firstValue = 0;
 var act = null;
 
-function acts(value , action)
+function actions(value , action)
 {
     if (act === null) {
         firstValue = 0;
@@ -14,7 +14,7 @@ function acts(value , action)
     addDelOnDisplay(0);
 }
 
-function rav(value)
+function equally(value)
 {
     switch(act) {
         case '+':
@@ -37,7 +37,7 @@ function rav(value)
     act = null;
 }
 
-function add(value)
+function addNumber(value)
 {
     if (display.value === "0"){
         display.value = value;
