@@ -9,7 +9,6 @@ describe("Tests", function() {
         display.value = DisplayValue;
         deleteLast(DisplayValue);
         assert.equal(display.value, "12");
-
     });
 
     it("Test function 'actions' with input parameters:figure from the display '"+ DisplayValue +

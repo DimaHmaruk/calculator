@@ -53,6 +53,7 @@ function clearAlls()
     addDelOnDisplay(0);
 }
 
+
 function deleteLast(value){
     value = value.substring(0, value.length - 1);
     addDelOnDisplay(value);
