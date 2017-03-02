@@ -8,5 +8,5 @@ to subtraction the numbers
 to divide the numbers
 To run the program
 download program end run “Calculator.html”
-to link https://DimaHmaruk/github.io/calculator/Calculator.html
+to link <http://DimaHmaruk/github.io/calculator/Calculator.html>
 http://mozilla.github.io/calculator/test/
