@@ -7,5 +7,9 @@ You can:
 - to divide the numbers
 
 # To run the program
-- download program end run "Calculator.html"
-- to link [Calculator](http://htmlpreview.github.io/?https://github.com/DimaHmaruk/calculator/blob/master/Calculator.html)
+- download program and run "Calculator.html"
+- or to link [Calculator](http://htmlpreview.github.io/?https://github.com/DimaHmaruk/calculator/blob/master/Calculator.html)
+
+# To run tests
+- download program and run "Tests.html"
+- or to link [Tests](http://htmlpreview.github.io/?https://github.com/DimaHmaruk/calculator/blob/master/Tests.html)
