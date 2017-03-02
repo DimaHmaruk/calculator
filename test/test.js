@@ -74,7 +74,6 @@ describe("Tests", function() {
         assert.equal(act, null);
     });
 
-
 });
 
 
